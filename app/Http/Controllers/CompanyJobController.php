@@ -1,8 +1,10 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Models\Company;
 use App\Models\CompanyJob;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CompanyJobController extends Controller
 {
@@ -11,7 +13,17 @@ class CompanyJobController extends Controller
      */
     public function index()
     {
-        return view('admin.company_jobs.index');
+        $user = Auth::user();
+
+        $myCompany = Company::where('employer_id', $user->id)->first();
+
+        if ($myCompany) {
+            $companyJobs = CompanyJob::with(['category'])->where('company_id', $myCompany)->paginate(10);
+        } else {
+            $companyJobs = collect();
+        }
+
+        return view('admin.company_jobs.index', compact('companyJobs'));
     }
 
     /**
