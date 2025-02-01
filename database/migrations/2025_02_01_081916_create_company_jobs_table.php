@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('slug');
             $table->string('type');
             $table->string('location');
-            $table->string('sill_level');
+            $table->string('skill_level');
             $table->unsignedInteger('salary');
             $table->string('thumbnail');
             $table->text('about');

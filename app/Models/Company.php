@@ -5,15 +5,22 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Category extends Model
+class Company extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
         'name',
-        'icon',
         'slug',
+        'logo',
+        'about',
+        'employer_id',
     ];
+
+    public function employer()
+    {
+        return $this->belongsTo(User::class, 'employer_id');
+    }
 
     public function jobs()
     {
