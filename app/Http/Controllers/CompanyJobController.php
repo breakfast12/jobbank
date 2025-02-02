@@ -7,6 +7,7 @@ use App\Models\Company;
 use App\Models\CompanyJob;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class CompanyJobController extends Controller
@@ -21,7 +22,7 @@ class CompanyJobController extends Controller
         $myCompany = Company::where('employer_id', $user->id)->first();
 
         if ($myCompany) {
-            $companyJobs = CompanyJob::with(['category'])->where('company_id', $myCompany)->paginate(10);
+            $companyJobs = CompanyJob::with(['category'])->where('company_id', $myCompany->id)->paginate(10);
         } else {
             $companyJobs = collect();
         }
@@ -89,7 +90,7 @@ class CompanyJobController extends Controller
      */
     public function show(CompanyJob $companyJob)
     {
-        //
+        return view('admin.company_jobs.show', compact('companyJob'));
     }
 
     /**
