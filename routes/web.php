@@ -10,6 +10,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontController::class, 'index'])->name('front.index');
+Route::get('/details/{company_job:slug}', [FrontController::class, 'details'])->name('front.details');
 
 // Route::get('/', function () {
 //     return view('welcome');

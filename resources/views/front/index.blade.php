@@ -7,7 +7,7 @@
         </div>
         <nav class="container max-w-[1130px] mx-auto flex items-center justify-between pt-10">
             <a href="index.html" class="flex shrink-0">
-                <img src="assets/logos/Logo.svg" alt="Logo">
+                <img src="{{ asset('assets/logos/Logo.svg') }}" alt="Logo">
             </a>
             <ul class="flex items-center gap-10">
                 <li>
@@ -35,7 +35,7 @@
             <div class="flex flex-col justify-center w-full gap-10">
                 <div class="badge flex items-center rounded-full py-2 pl-4 pr-6 gap-[10px] bg-white w-fit">
                     <div class="flex shrink-0">
-                        <img src="assets/icons/crown-orange.svg" alt="icon">
+                        <img src="{{ asset('assets/icons/crown-orange.svg') }}" alt="icon">
                     </div>
                     <p class="font-semibold text-sm leading-[21px] text-[#0C0039]">Helped 5 Million People Worldwide Grow Career</p>
                 </div>
@@ -63,112 +63,112 @@
                 <a href="" class="card">
                     <div class="flex flex-col rounded-[20px] border border-[#E8E4F8] p-5 gap-[30px] bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
                         <div class="w-[60px] h-[60px] flex shrink-0">
-                            <img src="assets/icons/Web Development 1-2.png" class="object-contain" alt="icon">
+                            <img src="{{ asset('assets/icons/Web Development 1-2.png') }}" class="object-contain" alt="icon">
                         </div>
                         <div class="flex items-center justify-between gap-4">
                             <div class="flex flex-col">
                                 <p class="font-bold text-lg leading-[27px]">Product Design</p>
                                 <p class="font-medium">182 Jobs</p>
                             </div>
-                            <img src="assets/icons/arrow-circle-right.svg" alt="icon">
+                            <img src="{{ asset('assets/icons/arrow-circle-right.svg') }}" alt="icon">
                         </div>
                     </div>
                 </a>
                 <a href="" class="card">
                     <div class="flex flex-col rounded-[20px] border border-[#E8E4F8] p-5 gap-[30px] bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
                         <div class="w-[60px] h-[60px] flex shrink-0">
-                            <img src="assets/icons/Web Development 1-1.png" class="object-contain" alt="icon">
+                            <img src="{{ asset('assets/icons/Web Development 1-1.png') }}" class="object-contain" alt="icon">
                         </div>
                         <div class="flex items-center justify-between gap-4">
                             <div class="flex flex-col">
                                 <p class="font-bold text-lg leading-[27px]">Marketing</p>
                                 <p class="font-medium">182 Jobs</p>
                             </div>
-                            <img src="assets/icons/arrow-circle-right.svg" alt="icon">
+                            <img src="{{ asset('assets/icons/arrow-circle-right.svg') }}" alt="icon">
                         </div>
                     </div>
                 </a>
                 <a href="" class="card">
                     <div class="flex flex-col rounded-[20px] border border-[#E8E4F8] p-5 gap-[30px] bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
                         <div class="w-[60px] h-[60px] flex shrink-0">
-                            <img src="assets/icons/Web Development 1.png" class="object-contain" alt="icon">
+                            <img src="{{ asset('assets/icons/Web Development 1.png') }}" class="object-contain" alt="icon">
                         </div>
                         <div class="flex items-center justify-between gap-4">
                             <div class="flex flex-col">
                                 <p class="font-bold text-lg leading-[27px]">Development</p>
                                 <p class="font-medium">182 Jobs</p>
                             </div>
-                            <img src="assets/icons/arrow-circle-right.svg" alt="icon">
+                            <img src="{{ asset('assets/icons/arrow-circle-right.svg') }}" alt="icon">
                         </div>
                     </div>
                 </a>
                 <a href="" class="card">
                     <div class="flex flex-col rounded-[20px] border border-[#E8E4F8] p-5 gap-[30px] bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
                         <div class="w-[60px] h-[60px] flex shrink-0">
-                            <img src="assets/icons/Web Development 1-4.png" class="object-contain" alt="icon">
+                            <img src="{{ asset('assets/icons/Web Development 1-4.png') }}" class="object-contain" alt="icon">
                         </div>
                         <div class="flex items-center justify-between gap-4">
                             <div class="flex flex-col">
                                 <p class="font-bold text-lg leading-[27px]">Software QA</p>
                                 <p class="font-medium">182 Jobs</p>
                             </div>
-                            <img src="assets/icons/arrow-circle-right.svg" alt="icon">
+                            <img src="{{ asset('assets/icons/arrow-circle-right.svg') }}" alt="icon">
                         </div>
                     </div>
                 </a>
                 <a href="" class="card">
                     <div class="flex flex-col rounded-[20px] border border-[#E8E4F8] p-5 gap-[30px] bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
                         <div class="w-[60px] h-[60px] flex shrink-0">
-                            <img src="assets/icons/Web Development 1-2.png" class="object-contain" alt="icon">
+                            <img src="{{ asset('assets/icons/Web Development 1-2.png') }}" class="object-contain" alt="icon">
                         </div>
                         <div class="flex items-center justify-between gap-4">
                             <div class="flex flex-col">
                                 <p class="font-bold text-lg leading-[27px]">Copywriting</p>
                                 <p class="font-medium">182 Jobs</p>
                             </div>
-                            <img src="assets/icons/arrow-circle-right.svg" alt="icon">
+                            <img src="{{ asset('assets/icons/arrow-circle-right.svg') }}" alt="icon">
                         </div>
                     </div>
                 </a>
                 <a href="" class="card">
                     <div class="flex flex-col rounded-[20px] border border-[#E8E4F8] p-5 gap-[30px] bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
                         <div class="w-[60px] h-[60px] flex shrink-0">
-                            <img src="assets/icons/Web Development 1-1.png" class="object-contain" alt="icon">
+                            <img src="{{ asset('assets/icons/Web Development 1-1.png') }}" class="object-contain" alt="icon">
                         </div>
                         <div class="flex items-center justify-between gap-4">
                             <div class="flex flex-col">
                                 <p class="font-bold text-lg leading-[27px]">Blockchain</p>
                                 <p class="font-medium">182 Jobs</p>
                             </div>
-                            <img src="assets/icons/arrow-circle-right.svg" alt="icon">
+                            <img src="{{ asset('assets/icons/arrow-circle-right.svg') }}" alt="icon">
                         </div>
                     </div>
                 </a>
                 <a href="" class="card">
                     <div class="flex flex-col rounded-[20px] border border-[#E8E4F8] p-5 gap-[30px] bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
                         <div class="w-[60px] h-[60px] flex shrink-0">
-                            <img src="assets/icons/Web Development 1.png" class="object-contain" alt="icon">
+                            <img src="{{ asset('assets/icons/Web Development 1.png') }}" class="object-contain" alt="icon">
                         </div>
                         <div class="flex items-center justify-between gap-4">
                             <div class="flex flex-col">
                                 <p class="font-bold text-lg leading-[27px]">Virtual Assistant</p>
                                 <p class="font-medium">182 Jobs</p>
                             </div>
-                            <img src="assets/icons/arrow-circle-right.svg" alt="icon">
+                            <img src="{{ asset('assets/icons/arrow-circle-right.svg') }}" alt="icon">
                         </div>
                     </div>
                 </a>
                 <a href="" class="card">
                     <div class="flex flex-col rounded-[20px] border border-[#E8E4F8] p-5 gap-[30px] bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
                         <div class="w-[60px] h-[60px] flex shrink-0">
-                            <img src="assets/icons/Web Development 1-4.png" class="object-contain" alt="icon">
+                            <img src="{{ asset('assets/icons/Web Development 1-4.png') }}" class="object-contain" alt="icon">
                         </div>
                         <div class="flex items-center justify-between gap-4">
                             <div class="flex flex-col">
                                 <p class="font-bold text-lg leading-[27px]">Data Science</p>
                                 <p class="font-medium">182 Jobs</p>
                             </div>
-                            <img src="assets/icons/arrow-circle-right.svg" alt="icon">
+                            <img src="{{ asset('assets/icons/arrow-circle-right.svg') }}" alt="icon">
                         </div>
                     </div>
                 </a>
@@ -177,264 +177,54 @@
         <section id="Latest" class="flex flex-col gap-[30px] mt-[70px]">
             <h2 class="container max-w-[1130px] mx-auto font-bold text-2xl leading-[36px]">Latest Jobs <br> Get Them Now</h2>
             <div class="main-carousel *:!overflow-visible">
-                <div class="card first-of-type:pl-[calc((100%-1130px)/2)] last-of-type:pr-[calc((100%-1130px)/2)] px-[15px] py-[2px]">
-                    <div class="w-[300px] flex flex-col shrink-0 rounded-[20px] border border-[#E8E4F8] p-5 gap-5 bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
-                        <div class="company-info flex items-center gap-3">
-                            <div class="w-[70px] flex shrink-0 overflow-hidden">
-                                <img src="assets/logos/grab.svg" class="object-contain w-full h-full" alt="logo">
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="font-semibold">Grab Singa</p>
-                                <p class="text-sm leading-[21px]">Posted at 22 Jan 2024</p>
-                            </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <p class="job-title font-bold text-lg leading-[27px] h-[54px] flex shrink-0 line-clamp-2">UI UX Designer Gaming Rapid Development</p>
-                        <div class="job-info flex flex-col gap-[14px]">
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/note-favorite-orange.svg" alt="icon">
+                @forelse ($jobs as $job)
+                    <div class="card first-of-type:pl-[calc((100%-1130px)/2)] last-of-type:pr-[calc((100%-1130px)/2)] px-[15px] py-[2px]">
+                        <div class="w-[300px] flex flex-col shrink-0 rounded-[20px] border border-[#E8E4F8] p-5 gap-5 bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
+                            <div class="company-info flex items-center gap-3">
+                                <div class="w-[70px] flex shrink-0 overflow-hidden">
+                                    <img src="{{ Storage::url($job->company->logo) }}" class="object-contain w-full h-full" alt="logo">
                                 </div>
-                                <p class="font-medium">Full-Time</p>
-                            </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/moneys-cyan.svg" alt="icon">
+                                <div class="flex flex-col">
+                                    <p class="font-semibold">{{ $job->company->name }}</p>
+                                    <p class="text-sm leading-[21px]">Posted at {{ $job->created_at->format('M d, Y') }}</p>
                                 </div>
-                                <p class="font-medium">Guaranteed</p>
                             </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/location-purple.svg" alt="icon">
+                            <hr class="border-[#E8E4F8]">
+                            <p class="job-title font-bold text-lg leading-[27px] h-[54px] flex shrink-0 line-clamp-2">{{ $job->name }}</p>
+                            <div class="job-info flex flex-col gap-[14px]">
+                                <div class="flex items-center gap-[6px]">
+                                    <div class="flex shrink-0 w-6 h-6">
+                                        <img src="{{ asset('assets/icons/note-favorite-orange.svg') }}" alt="icon">
+                                    </div>
+                                    <p class="font-medium">{{ $job->type }}</p>
                                 </div>
-                                <p class="font-medium">Bali, Indonesia</p>
-                            </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <div class="flex items-center justify-between">
-                            <div class="flex flex-col gap-[2px]">
-                                <p class="font-bold text-lg leading-[27px]">Rp 250.000</p>
-                                <p class="text-sm leading-[21px]">/month</p>
-                            </div>
-                            <a href="details.html" class="rounded-full p-[14px_24px] bg-[#FF6B2C] font-semibold text-white hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card first-of-type:pl-[calc((100%-1130px)/2)] last-of-type:pr-[calc((100%-1130px)/2)] px-[15px] py-[2px]">
-                    <div class="w-[300px] flex flex-col shrink-0 rounded-[20px] border border-[#E8E4F8] p-5 gap-5 bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
-                        <div class="company-info flex items-center gap-3">
-                            <div class="w-[70px] flex shrink-0 overflow-hidden">
-                                <img src="assets/logos/visa.svg" class="object-contain w-full h-full" alt="logo">
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="font-semibold">VISA Cabang</p>
-                                <p class="text-sm leading-[21px]">Posted at 22 Jan 2024</p>
-                            </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <p class="job-title font-bold text-lg leading-[27px] h-[54px] flex shrink-0 line-clamp-2">UI UX Designer Gaming Rapid Development</p>
-                        <div class="job-info flex flex-col gap-[14px]">
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/note-favorite-orange.svg" alt="icon">
+                                <div class="flex items-center gap-[6px]">
+                                    <div class="flex shrink-0 w-6 h-6">
+                                        <img src="{{ asset('assets/icons/moneys-cyan.svg') }}" alt="icon">
+                                    </div>
+                                    <p class="font-medium">Guaranteed</p>
                                 </div>
-                                <p class="font-medium">Full-Time</p>
-                            </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/moneys-cyan.svg" alt="icon">
+                                <div class="flex items-center gap-[6px]">
+                                    <div class="flex shrink-0 w-6 h-6">
+                                        <img src="{{ asset('assets/icons/location-purple.svg') }}" alt="icon">
+                                    </div>
+                                    <p class="font-medium">{{ $job->location }}</p>
                                 </div>
-                                <p class="font-medium">Guaranteed</p>
                             </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/location-purple.svg" alt="icon">
+                            <hr class="border-[#E8E4F8]">
+                            <div class="flex items-center justify-between">
+                                <div class="flex flex-col gap-[2px]">
+                                    <p class="font-bold text-lg leading-[27px]">Rp {{ number_format($job->salary, 0, ',', '.') }}</p>
+                                    <p class="text-sm leading-[21px]">/month</p>
                                 </div>
-                                <p class="font-medium">Bali, Indonesia</p>
+                                <a href="{{ route('front.details', $job->slug) }}" class="rounded-full p-[14px_24px] bg-[#FF6B2C] font-semibold text-white hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Details</a>
                             </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <div class="flex items-center justify-between">
-                            <div class="flex flex-col gap-[2px]">
-                                <p class="font-bold text-lg leading-[27px]">Rp 18.500.000</p>
-                                <p class="text-sm leading-[21px]">/month</p>
-                            </div>
-                            <a href="details.html" class="rounded-full p-[14px_24px] bg-[#FF6B2C] font-semibold text-white hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Details</a>
                         </div>
                     </div>
-                </div>
-                <div class="card first-of-type:pl-[calc((100%-1130px)/2)] last-of-type:pr-[calc((100%-1130px)/2)] px-[15px] py-[2px]">
-                    <div class="w-[300px] flex flex-col shrink-0 rounded-[20px] border border-[#E8E4F8] p-5 gap-5 bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
-                        <div class="company-info flex items-center gap-3">
-                            <div class="w-[70px] flex shrink-0 overflow-hidden">
-                                <img src="assets/logos/mandiri.svg" class="object-contain w-full h-full" alt="logo">
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="font-semibold">Mandiri Prioritas</p>
-                                <p class="text-sm leading-[21px]">Posted at 22 Jan 2024</p>
-                            </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <p class="job-title font-bold text-lg leading-[27px] h-[54px] flex shrink-0 line-clamp-2">Sales Acquisitions</p>
-                        <div class="job-info flex flex-col gap-[14px]">
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/note-favorite-orange.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Part-Time</p>
-                            </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/moneys-cyan.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Guaranteed</p>
-                            </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/location-purple.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Remote</p>
-                            </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <div class="flex items-center justify-between">
-                            <div class="flex flex-col gap-[2px]">
-                                <p class="font-bold text-lg leading-[27px]">Rp 123.000.000</p>
-                                <p class="text-sm leading-[21px]">/month</p>
-                            </div>
-                            <a href="details.html" class="rounded-full p-[14px_24px] bg-[#FF6B2C] font-semibold text-white hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card first-of-type:pl-[calc((100%-1130px)/2)] last-of-type:pr-[calc((100%-1130px)/2)] px-[15px] py-[2px]">
-                    <div class="w-[300px] flex flex-col shrink-0 rounded-[20px] border border-[#E8E4F8] p-5 gap-5 bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
-                        <div class="company-info flex items-center gap-3">
-                            <div class="w-[70px] flex shrink-0 overflow-hidden">
-                                <img src="assets/logos/grab.svg" class="object-contain w-full h-full" alt="logo">
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="font-semibold">Grab Singa</p>
-                                <p class="text-sm leading-[21px]">Posted at 22 Jan 2024</p>
-                            </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <p class="job-title font-bold text-lg leading-[27px] h-[54px] flex shrink-0 line-clamp-2">UI UX Designer Gaming Rapid Development</p>
-                        <div class="job-info flex flex-col gap-[14px]">
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/note-favorite-orange.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Full-Time</p>
-                            </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/moneys-cyan.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Guaranteed</p>
-                            </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/location-purple.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Bali, Indonesia</p>
-                            </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <div class="flex items-center justify-between">
-                            <div class="flex flex-col gap-[2px]">
-                                <p class="font-bold text-lg leading-[27px]">Rp 250.000</p>
-                                <p class="text-sm leading-[21px]">/month</p>
-                            </div>
-                            <a href="details.html" class="rounded-full p-[14px_24px] bg-[#FF6B2C] font-semibold text-white hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card first-of-type:pl-[calc((100%-1130px)/2)] last-of-type:pr-[calc((100%-1130px)/2)] px-[15px] py-[2px]">
-                    <div class="w-[300px] flex flex-col shrink-0 rounded-[20px] border border-[#E8E4F8] p-5 gap-5 bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
-                        <div class="company-info flex items-center gap-3">
-                            <div class="w-[70px] flex shrink-0 overflow-hidden">
-                                <img src="assets/logos/bca.svg" class="object-contain w-full h-full" alt="logo">
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="font-semibold">BCA Jakarta</p>
-                                <p class="text-sm leading-[21px]">Posted at 22 Jan 2024</p>
-                            </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <p class="job-title font-bold text-lg leading-[27px] h-[54px] flex shrink-0 line-clamp-2">UI UX Designer Gaming Rapid Development</p>
-                        <div class="job-info flex flex-col gap-[14px]">
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/note-favorite-orange.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Full-Time</p>
-                            </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/moneys-cyan.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Guaranteed</p>
-                            </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/location-purple.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Bali, Indonesia</p>
-                            </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <div class="flex items-center justify-between">
-                            <div class="flex flex-col gap-[2px]">
-                                <p class="font-bold text-lg leading-[27px]">Rp 18.500.000</p>
-                                <p class="text-sm leading-[21px]">/month</p>
-                            </div>
-                            <a href="details.html" class="rounded-full p-[14px_24px] bg-[#FF6B2C] font-semibold text-white hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card first-of-type:pl-[calc((100%-1130px)/2)] last-of-type:pr-[calc((100%-1130px)/2)] px-[15px] py-[2px]">
-                    <div class="w-[300px] flex flex-col shrink-0 rounded-[20px] border border-[#E8E4F8] p-5 gap-5 bg-white shadow-[0_8px_30px_0_#0E01400D] hover:ring-2 hover:ring-[#FF6B2C] transition-all duration-300">
-                        <div class="company-info flex items-center gap-3">
-                            <div class="w-[70px] flex shrink-0 overflow-hidden">
-                                <img src="assets/logos/visa.svg" class="object-contain w-full h-full" alt="logo">
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="font-semibold">VISA Cabang</p>
-                                <p class="text-sm leading-[21px]">Posted at 22 Jan 2024</p>
-                            </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <p class="job-title font-bold text-lg leading-[27px] h-[54px] flex shrink-0 line-clamp-2">UI UX Designer Gaming Rapid Development</p>
-                        <div class="job-info flex flex-col gap-[14px]">
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/note-favorite-orange.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Full-Time</p>
-                            </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/moneys-cyan.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Guaranteed</p>
-                            </div>
-                            <div class="flex items-center gap-[6px]">
-                                <div class="flex shrink-0 w-6 h-6">
-                                    <img src="assets/icons/location-purple.svg" alt="icon">
-                                </div>
-                                <p class="font-medium">Bali, Indonesia</p>
-                            </div>
-                        </div>
-                        <hr class="border-[#E8E4F8]">
-                        <div class="flex items-center justify-between">
-                            <div class="flex flex-col gap-[2px]">
-                                <p class="font-bold text-lg leading-[27px]">Rp 18.500.000</p>
-                                <p class="text-sm leading-[21px]">/month</p>
-                            </div>
-                            <a href="details.html" class="rounded-full p-[14px_24px] bg-[#FF6B2C] font-semibold text-white hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Details</a>
-                        </div>
-                    </div>
-                </div>
+                @empty
+                    <p>Belum ada data job terbaru</p>
+                @endforelse
+
             </div>
         </section>
     </body>

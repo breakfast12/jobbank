@@ -98,7 +98,7 @@ class CompanyJobController extends Controller
      */
     public function edit(CompanyJob $companyJob)
     {
-        //
+        return view('admin.company_jobs.edit', compact('companyJob'));
     }
 
     /**
