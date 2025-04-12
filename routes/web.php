@@ -4,13 +4,18 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\CompanyJobController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\JobCandidateController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FrontController::class, 'index'])->name('front.index');
+Route::get('/details/{company_job:slug}', [FrontController::class, 'details'])->name('front.details');
+Route::get('/category/{category:slug}', [FrontController::class, 'category'])->name('front.category');
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -20,6 +25,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::middleware('can:apply job')->group(function () {
+        Route::get('/apply/success', [FrontController::class, 'successApply'])->name('front.apply.success');
+        Route::get('/apply/{company_job:slug}', [FrontController::class, 'apply'])->name('front.apply');
+        Route::post('/apply/{company_job:slug}/submit', [FrontController::class, 'applyStore'])->name('front.apply.store');
+    });
 
     Route::prefix('dashboard')->name('dashboard.')->group(function () {
         Route::middleware(['can:apply job'])->group(function () {

@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="flex flex-row items-center gap-x-3">
-                        <a href="{{ route('admin.company.edit', $companyJob) }}" class="font-bold py-4 px-6 bg-indigo-500 text-white rounded-full">
+                        <a href="{{ route('admin.company_jobs.edit', $companyJob) }}" class="font-bold py-4 px-6 bg-indigo-500 text-white rounded-full">
                             Edit Job
                         </a>
                         <a href=" " class="font-bold py-4 px-6 bg-orange-500 text-white rounded-full">
