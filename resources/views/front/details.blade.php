@@ -26,10 +26,22 @@
                     <a href="index.html" class="transition-all duration-300 hover:font-semibold hover:text-[#FF6B2C] font-medium text-white">About</a>
                 </li>
             </ul>
-            <div class="flex items-center gap-3">
-                <a href="signin.html" class="rounded-full border border-white p-[14px_24px] font-semibold text-white">Sign In</a>
-                <a href="signup.html" class="rounded-full p-[14px_24px] bg-[#FF6B2C] font-semibold text-white hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Sign up</a>
-            </div>
+            @guest
+                <div class="flex items-center gap-3">
+                    <a href="{{ route('login') }}" class="rounded-full border border-white p-[14px_24px] font-semibold text-white">Sign In</a>
+                    <a href="{{ route('register') }}" class="rounded-full p-[14px_24px] bg-[#FF6B2C] font-semibold text-white hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Sign up</a>
+                </div>
+            @endguest
+            @auth
+                <div class="flex items-center gap-4">
+                    <p class="username font-medium text-white">Hi, {{ Auth::user()->name }}</p>
+                    <div class="w-[52px] h-[52px] flex shrink-0 rounded-full overflow-hidden">
+                        <a href="{{ route('dashboard') }}">
+                            <img src="{{ Storage::url(Auth::user()->avatar) }}" class="object-cover w-full h-full" alt="photo">
+                        </a>
+                    </div>
+                </div>
+            @endauth
         </nav>
         <article id="Details" class="max-w-[900px] mx-auto flex flex-col rounded-[20px] bg-white border border-[#E8E4F8] p-[30px] gap-10 shadow-[0_8px_30px_0_#0E01400D] mt-[70px]">
             <div id="Cover" class="w-full relative">
@@ -68,7 +80,7 @@
                     <div class="flex shrink-0 w-[38px] h-[38px]">
                         <img src="{{ asset('assets/icons/moneys-cyan.svg') }}" alt="icon">
                     </div>
-                    <p class="font-semibold text-lg leading-[27px]">{{ number_format($companyJob->salary, 0, ',', '.') }}/mo</p>
+                    <p class="font-semibold text-lg leading-[27px]">Rp {{ number_format($companyJob->salary, 0, ',', '.') }}/mo</p>
                 </div>
                 <div class="flex items-center gap-[6px]">
                     <div class="flex shrink-0 w-[38px] h-[38px]">
@@ -137,7 +149,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <a href="" class="rounded-full border border-[#0E0140] p-[14px_24px] font-semibold text-[#0E0140]">Bookmark</a>
-                    <a href="apply.html" class="rounded-full p-[14px_24px] bg-[#FF6B2C] font-semibold text-white hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Apply Now</a>
+                    <a href="{{ route('front.apply', $companyJob->slug) }}" class="rounded-full p-[14px_24px] bg-[#FF6B2C] font-semibold text-white hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Apply Now</a>
                 </div>
             </div>
         </article>
