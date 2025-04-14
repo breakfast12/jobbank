@@ -52,6 +52,7 @@
                         Belum Ada Data Terbaru
                     </p>
                 @endforelse
+                {{ $companyJobs->links() }}
             </div>
         </div>
     </div>

@@ -55,12 +55,13 @@
                     <h1 class="font-black text-[60px] leading-[70px] text-white">We Help You<br>Get Dream Job</h1>
                     <p class="text-lg leading-[34px] text-white">Must trusted platform to build new career and<br>get an happy job better than befooore</p>
                 </div>
-                <form action="search.html" class="flex items-center bg-white rounded-full pl-6 h-fit focus-within:ring-2 focus-within:ring-[#FF6B2C] transition-all duration-300">
+                <form action="{{ route('front.search') }}" method="GET" class="flex items-center bg-white rounded-full pl-6 h-fit focus-within:ring-2 focus-within:ring-[#FF6B2C] transition-all duration-300">
+                    @csrf
                     <div class="flex items-center w-full mr-6 gap-[10px]">
                         <div class="flex shrink-0">
                             <img src="{{ asset('assets/icons/search-normal.svg') }}" alt="icon">
                         </div>
-                        <input type="text" autocomplete="off" class="appearance-none w-full outline-none font-semibold placeholder:font-normal placeholder:text-[#0E0140] focus:outline-none" placeholder="Quick search your dream job...">
+                        <input name="keyword" type="text" autocomplete="off" class="appearance-none w-full outline-none font-semibold placeholder:font-normal placeholder:text-[#0E0140] focus:outline-none" placeholder="Quick search your dream job...">
                     </div>
                     <button type="submit" class="rounded-full py-5 px-[30px] bg-[#FF6B2C] font-semibold text-white text-nowrap hover:shadow-[0_10px_20px_0_#FF6B2C66] transition-all duration-300">Explore Now</button>
                 </form>
