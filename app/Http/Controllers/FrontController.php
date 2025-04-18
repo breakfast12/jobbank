@@ -79,8 +79,14 @@ class FrontController extends Controller
         $keyword = $request->keyword;
 
         $jobs = CompanyJob::with(['company', 'category'])
-            ->where('name', 'like', '%' . $keyword . '%')->paginate(1);
+            ->where('name', 'like', '%' . $keyword . '%')->paginate(1)
+            ->withQueryString();
 
         return view('front.search', compact('jobs', 'keyword'));
+    }
+
+    public function category(Category $category)
+    {
+        return view('front.category', compact('category'));
     }
 }

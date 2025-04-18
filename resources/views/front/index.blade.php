@@ -19,7 +19,6 @@
                     <p class="text-lg leading-[34px] text-white">Must trusted platform to build new career and<br>get an happy job better than befooore</p>
                 </div>
                 <form action="{{ route('front.search') }}" method="GET" class="flex items-center bg-white rounded-full pl-6 h-fit focus-within:ring-2 focus-within:ring-[#FF6B2C] transition-all duration-300">
-                    @csrf
                     <div class="flex items-center w-full mr-6 gap-[10px]">
                         <div class="flex shrink-0">
                             <img src="{{ asset('assets/icons/search-normal.svg') }}" alt="icon">
