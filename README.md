@@ -2,18 +2,6 @@
 
 A full-featured job portal built with Laravel 11, Spatie Permission, Breeze auth scaffolding, and MySQL. This application allows users to register, create companies, post jobs, search and apply for positions, and much more.
 
-## Table of Contents
-
--   [Features](#features)
--   [Tech Stack](#tech-stack)
--   [Requirements](#requirements)
--   [Installation](#installation)
--   [Configuration](#configuration)
--   [Usage](#usage)
--   [Running Tests](#running-tests)
--   [Contributing](#contributing)
--   [License](#license)
-
 ## Features
 
 -   User authentication (login & registration) powered by Laravel Breeze
