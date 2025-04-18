@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontController::class, 'index'])->name('front.index');
 Route::get('/details/{company_job:slug}', [FrontController::class, 'details'])->name('front.details');
 Route::get('/category/{category:slug}', [FrontController::class, 'category'])->name('front.category');
+Route::get('/search/jobs/', [FrontController::class, 'search'])->name('front.search');
 
 // Route::get('/', function () {
 //     return view('welcome');

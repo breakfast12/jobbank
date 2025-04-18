@@ -5,6 +5,7 @@ use App\Http\Requests\StoreApplyJobRequest;
 use App\Models\Category;
 use App\Models\CompanyJob;
 use App\Models\JobCandidate;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
@@ -67,5 +68,25 @@ class FrontController extends Controller
     public function successApply()
     {
         return view('front.success-apply');
+    }
+
+    public function search(Request $request)
+    {
+        $request->validate([
+            'keyword' => ['required', 'string', 'max:255'],
+        ]);
+
+        $keyword = $request->keyword;
+
+        $jobs = CompanyJob::with(['company', 'category'])
+            ->where('name', 'like', '%' . $keyword . '%')->paginate(1)
+            ->withQueryString();
+
+        return view('front.search', compact('jobs', 'keyword'));
+    }
+
+    public function category(Category $category)
+    {
+        return view('front.category', compact('category'));
     }
 }
