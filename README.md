@@ -24,7 +24,7 @@ A full-featured job portal built with Laravel 11, Spatie Permission, Breeze auth
 
 ## Requirements
 
--   PHP >= 8.1
+-   PHP >= 8.2
 -   Composer
 -   MySQL
 -   Node.js & NPM
